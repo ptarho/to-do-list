@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="main">
+                <div class="categories ">
+                    <p class="categories__item categories__item-active">
+                        <span class="text-design">All</span> 
+                    </p>
+                    <p class="categories__item" onclick="changeCategory(this)">
+                        <span class="text-design">Payments</span>
+                    </p>
+                    <p class="categories__item">
+                        <span class="text-design">Sport</span>
+                    </p>
+                    <p class="categories__item">
+                        <span class="text-design">Study</span>
+                    </p>
+                    <p class="categories__item">
+                        <span class="text-design">Home</span>
+                    </p>
+                    <p class="categories__item">
+                        <span class="text-design">Work</span>
+                    </p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="list">
+
+                    <h2 class="list__header">To - Do &nbsp;List</h2>
+
+                    <div class="task-creation">
+                        <input class="task-creation__text" type="text" placeholder="Add a new task..." >
+                        <div class="task-creation__btn" onclick="createTask()">+</div>
+                    </div>
+
+                    <hr>
+                    
+                   
+                    
+                </div>
+            </div>
+        </div>  
+        <script src="Task.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
